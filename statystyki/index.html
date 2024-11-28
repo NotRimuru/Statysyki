@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statystyki</title>
+    <link rel = "stylesheet" href = "statystyki.css">
+    <script src = "statystyki.js"></script>
+</head>
+<body class = 'no-select'>
+    <div class = "statistics-div">
+        <div class = 'title'>
+            <h1 class = "tytul">Analiza wydatków</h1><h1 class="strzalka">➜</h1>
+        </div>
+        <p style = "color: #999; font-size: 2lvh; margin-top: 2lvh; text-align: left; margin-bottom: 0px;">ostatnie 30 dni wydatków dla wszystkich produktów</p>
+        <h1 class = 'wydatki'></h1>
+        <div class = "statistic-list"></div>
+    </div>
+    <script>
+        let transakcje = [];
+        let saldo = 5000;
+        wygenerujTransakcje(100, 'losowo', transakcje, saldo);
+        const {statystykiKategorii, suma} = wygenerujStatystyki(true, transakcje);
+        wyswietlStatystyki(statystykiKategorii, suma, 0);
+    </script>
+</body>
+</html>

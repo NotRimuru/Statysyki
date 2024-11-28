@@ -1,0 +1,88 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+}
+
+.no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.title{
+    display: flex; width: auto;
+    height: 5lvh; 
+    align-items: center;
+    color: rgb(1, 206, 233);
+}
+
+.statistics-div{
+    width: 20lvw;
+    height: fit-content;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 2vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    align-self: center;
+}
+
+.tytul{
+    text-align: left;
+    font-size: 2.5lvh;
+}
+
+.statistic{
+    height: 5lvh;
+    width: 100%;
+    display: flex;
+}
+
+.statistic-list{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1lvh;
+}
+
+.statistic-container{
+    width: 70%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.statistic-bar{
+    width: 80%;
+    height: 20%;
+    background-color: #ddd;
+    border-radius: 1lvh;
+}
+
+.statistic-progress{
+    border-radius: 1lvh;
+    height: 100%;
+}
+
+.nazwa-kategorii{
+    text-align: left;
+    color: #555;
+    font-size: 2lvh;
+}
+
+.kwota-kategorii{
+    text-align: left;
+    color: #555;
+    font-size: 2lvh; width: 30%;
+    margin: 0.5lvh; overflow: hidden;
+    font-weight: bold;
+}
